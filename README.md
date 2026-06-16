@@ -39,7 +39,7 @@
 
 ## 数据存储
 
-所有记录保存在 `baby_feeding_data.xlsx` 中，包含三个工作表：
+所有记录保存在 `baby_feeding_data.xlsx` 中（首次使用时自动创建），包含三个工作表：
 
 | 工作表 | 内容 |
 |--------|------|
@@ -52,12 +52,13 @@
 ```
 .
 ├── baby_feeding/
-│   ├── __init__.py
-│   └── core.py          # 核心功能
+│   ├── __init__.py      # 模块入口
+│   └── core.py          # 核心功能实现
 ├── cli.py               # 命令行入口（可选）
-├── requirements.txt     # 依赖：pandas, openpyxl
+├── requirements.txt     # 依赖声明
 ├── SKILL.md             # Skill 元数据与详细说明
-└── baby_feeding_data.xlsx   # 数据文件
+├── LICENSE              # MIT开源许可证
+└── .gitignore          # Git忽略配置
 ```
 
 ## 许可证
