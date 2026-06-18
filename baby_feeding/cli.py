@@ -4,7 +4,7 @@
 """
 
 from datetime import datetime
-from baby_feeding import (
+from .core import (
     add_feeding_record,
     add_poop_record,
     add_care_record,

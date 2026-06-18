@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "baby-feeding"
+version = "1.0.0"
+description = "婴儿喂养记录管理工具 - 支持记录和管理婴儿的饮食、便便和护理记录"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+
+[project.scripts]
+baby-feeding = "baby_feeding.cli:main"
+
+[project.entry-points."console_scripts"]
+baby-feeding = "baby_feeding.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/example/baby-feeding"
+"Bug Tracker" = "https://github.com/example/baby-feeding/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["baby_feeding*"]
+
+[tool.setuptools.package-data]
+baby_feeding = ["*.md"]
